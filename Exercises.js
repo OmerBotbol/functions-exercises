@@ -82,7 +82,7 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-getFirstNotRepeating("abanibiabohebe")
+
 // *** End of Playground ***
 
 // Don't touch me :)
