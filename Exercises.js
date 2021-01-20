@@ -55,6 +55,22 @@ function myPower(x, n) {
 //Question 5
 function getFirstNotRepeating(str) {
   // your code here
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    for (let n = 0; n < str.length; n++) {
+      count = 0;
+      if(i === n){
+        n++;
+      }
+      if (str[i] === str[n]){
+        count ++;
+        break;
+      }
+    }
+    if(count === 0){
+      return str[i];
+    }
+  }
   return "";
 }
 
@@ -66,7 +82,7 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-
+getFirstNotRepeating("abanibiabohebe")
 // *** End of Playground ***
 
 // Don't touch me :)
