@@ -45,7 +45,11 @@ function allCaps(str) {
 //Question 4
 function myPower(x, n) {
   // your code here
-  return "";
+  let num = x;
+  for (let i = 1; i < n; i++) {
+    num *= num
+  }
+  return num;
 }
 
 //Question 5
