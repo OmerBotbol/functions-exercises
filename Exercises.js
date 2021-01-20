@@ -12,7 +12,14 @@ function myReverse(str) {
 function allCombinations(str) {
   let combinations = [];
   // your code here
-
+  for (let i = 0; i < str.length; i++) {
+    let tmp = str[i];
+    combinations.push(str[i]);
+    for (let n = i+1; n < str.length; n++) {
+      tmp +=  str[n];
+      combinations.push(tmp);
+    }
+  }
   //
   return combinations;
 }
