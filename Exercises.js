@@ -77,7 +77,28 @@ function getFirstNotRepeating(str) {
 //Question 6 (Bonus)
 function isPrefectNumber(num) {
   // your code here
-  return "I'm not interested in the bonus question :(";
+  function allDivisorNumbers(myNum){
+    divisorArr = [];
+    for (let i = 0; i < myNum; i++) {
+      if(myNum % i === 0){
+        divisorArr.push(i);
+      }
+      
+    }
+    return divisorArr;
+  }
+
+  const numArr = allDivisorNumbers(num);
+  let sum =0;
+  for (let i = 0; i < numArr.length; i++) {
+    sum += numArr[i];
+  }
+  if(sum === num){
+    return "this is a perfect number!"
+  }
+  else{
+  return "this isn't a perfect number! :(";
+  }
 }
 
 // *** Playground ***

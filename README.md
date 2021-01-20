@@ -1,6 +1,6 @@
 # Functions Exercises
 
-[### I solved the bonus]: <>
+### I solved the bonus
 
 ## Before you begin
 
