@@ -27,7 +27,19 @@ function allCombinations(str) {
 //Question 3
 function allCaps(str) {
   // your code here
-  return "";
+  let capitalizeStr = ""
+  capitalizeStr += str[0].toUpperCase();
+  for (let i = 1; i < str.length; i++) {
+    if (str[i] === " "){
+      capitalizeStr += str[i];
+      i++;
+      capitalizeStr += str[i].toUpperCase();
+    }
+    else{
+      capitalizeStr += str[i];
+    }
+  }
+  return capitalizeStr;
 }
 
 //Question 4
